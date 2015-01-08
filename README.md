@@ -1,10 +1,9 @@
 # pwf
 PHP Web Framework
 
-
 ## Configuration
 ### Apache
-.htaccess should containg following:
+*.htaccess* should containg following:
 ```
 <IfModule mod_rewrite.c>
 	RewriteEngine On
@@ -14,3 +13,5 @@ PHP Web Framework
 	RewriteRule ^(.*)$ ./index.php
 </IfModule>
 ```
+### nginx
+TODO
