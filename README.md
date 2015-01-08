@@ -2,6 +2,7 @@
 PHP Web Framework
 
 ## Configuration
+Give write permission to *include\smarty\cache*
 ### Apache
 *.htaccess* should containg following:
 ```
