@@ -15,4 +15,11 @@ Give write permission to *include\smarty\cache*
 </IfModule>
 ```
 ### nginx
-TODO
+```
+location / {
+    index index.php;
+    if (!-f $request_filename) {
+        rewrite ^(.*)$ /index.php last;
+    }
+}
+```
