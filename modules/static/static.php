@@ -6,14 +6,19 @@
  * 
  * @copyright Vasily Melenchuk
  */
-	if (!defined('NORMAL_START')) die();
-	if (count($pageParams)<1)
-		$page_file = 'page_index';
-	else	
-		$page_file = 'page_'.implode('_',array_slice($pageParams,0));
+	if ( !defined('NORMAL_START') ) die();
 
-		
-	if (!file_exists('templates/'.$lang.'/'.$page_file.'.tpl')) {
+	if ( count( $pageParams ) < 2 )
+	{
+		$page_file = 'page_index';
+	}
+	else
+	{
+		$page_file = 'page_'.implode( '_',array_slice( $pageParams,0 ) );
+	}
+
+	if ( !file_exists('templates/'.$lang.'/'.$page_file.'.tpl') )
+	{
 		Error_404();
 		return;
 	}
@@ -22,5 +27,5 @@
 	header('Last-Modified: '.gmdate('D, d M Y H:i:s', filemtime('templates/'.$lang.'/'.$page_file.'.tpl')) . ' GMT');
 
 	// Draw content
-	DrawTemplate($lang.'/'.$page_file);
+	DrawTemplate( $lang.'/'.$page_file );
 ?>

@@ -40,7 +40,7 @@
 #! Disallow: /temp/privatedata.xls
 #! Disallow:
 #! 
-#! Sitemap: http://example.com/sitemap.xml
+Sitemap: http://example.com/sitemap.xml
 
 User-agent: *
 Allow: /
