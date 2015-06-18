@@ -14,7 +14,7 @@
 	}
 	else
 	{
-		$page_file = 'page_'.implode( '_',array_slice( $pageParams,0 ) );
+		$page_file = 'page_'.implode( '_',array_slice( $pageParams, 1 ) );
 	}
 
 	if ( !file_exists('templates/'.$lang.'/'.$page_file.'.tpl') )
