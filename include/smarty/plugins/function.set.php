@@ -9,7 +9,7 @@
  * 
  */
 /**
- * Реализация модуля
+ * 'set' function realization
  *
  * @param array $params
  * @param Smarty $smarty
@@ -18,7 +18,7 @@
 function smarty_function_set($params, &$smarty)
 {
 	global $pageParameters;
-	if (!is_a($smarty, 'Smarty'))
+	if (!is_a($smarty, 'Smarty_Internal_Template'))
 	{
 		return;
 	}
