@@ -16,5 +16,5 @@
 		Error_501("SQL connection failed");
 		exit();
 	}
-	$db->SetCharSet('utf8');	
+	$db->SetCharSet('utf8');
 ?>
